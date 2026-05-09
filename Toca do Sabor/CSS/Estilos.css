@@ -1,0 +1,617 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  border: none;
+  text-decoration: none;
+  font-family: "Quicksand", sans-serif;
+}
+
+html {
+  width: 100vw;
+  height: 100vh;
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+/* Menu */
+
+.content {
+  width: 100vw;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  padding: 50px;
+}
+
+.logo {
+  width: 70px;
+  display: flex;
+  align-items: center;
+}
+
+.logo h3 {
+  color: white;
+  font-size: 2rem;
+}
+
+.logo img {
+  width: 100px;
+  height: 100px;
+}
+
+.content .list-menu {
+  width: 750px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content .list-menu li a {
+  padding: 3rem 1rem 2rem 1rem;
+  color: white;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: all 200ms ease-in;
+}
+
+.content .list-menu li a:hover {
+  background-color: #3333;
+  border-bottom: 4px solid rgb(255, 115, 0);
+  color: rgb(255, 155, 0);
+}
+
+/* first-section */
+
+.first-section {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(https://www.cnnbrasil.com.br/viagemegastronomia/wp-content/uploads/sites/5/2022/05/origem-do-hambuguer-cnn4.jpg?w=1200&h=900&crop=1);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 50px;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-section .conteudo-principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.first-section h1 {
+  color: rgb(255, 115, 0);
+  font-size: 6rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.first-section h2 {
+  color: rgb(177, 177, 177);
+  font-size: 3rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+
+.btn button {
+  width: 230px;
+  height: 60px;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: rgb(255, 115, 0);
+  border-radius: 10px;
+  color: black;
+  font-weight: 700;
+  margin-top: 5rem;
+  transition: all 400ms ease-in;
+}
+
+.btn button:hover {
+  border: 1px solid rgb(255, 115, 0);
+  background-color: transparent;
+  color: rgb(255, 115, 0);
+}
+
+.btn {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Sobre nós */
+
+.sobre-nos {
+  background-color: #1f1e1f;
+  width: 100%;
+  padding-bottom: 5rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sobre-nos img {
+  width: 400px;
+  height: 400px;
+  margin-top: 10rem;
+  margin-left: 10rem;
+  border: 2px solid rgb(155, 155, 155);
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contentsobre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contentsobre h2 {
+  font-size: 6rem;
+  margin-bottom: 1rem;
+}
+
+.contentsobre p {
+  text-align: center;
+  font-size: 1.8rem;
+  width: 600px;
+}
+
+/* Cardápio */
+
+.cardapio {
+  width: 100vw;
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0, 0, 0);
+}
+
+.cardapio h2 {
+  padding: 10px;
+  font-size: 5rem;
+  color: rgb(255, 115, 0);
+  text-transform: uppercase;
+}
+
+.itens-cardapio {
+  width: 80%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10px, 300px));
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.itens-cardapio .info {
+  background-color: #1f1e1f;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.itens-cardapio .info h3 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  text-decoration: underline;
+  color: white;
+}
+
+.itens-cardapio .info h4 {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 150px 150px;
+  margin-left: 6rem;
+  color: white;
+}
+
+.itens-cardapio .info h4 span {
+  font-size: 1.6rem;
+  color: rgb(255, 115, 0);
+  margin-left: 1.5rem;
+  text-decoration: underline;
+}
+
+.itens-cardapio div {
+  background-color: rgb(255, 115, 0);
+  box-shadow: 0px 0px 4px 1px;
+}
+
+.itens-cardapio img {
+  width: 100%;
+  height: 200px;
+}
+
+.itens-cardapio .info .pedir {
+  width: 200px;
+  height: 35px;
+  margin-top: 0.5rem;
+  background-color: rgb(255, 115, 0);
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: black;
+  transition: all 200ms ease-in;
+}
+
+.itens-cardapio .info .pedir:hover {
+  background-color: rgb(255, 115, 0);
+  color: white;
+}
+
+/*Contatos*/
+
+footer {
+  padding: 8px 4%;
+  background-color: black;
+}
+
+footer.flex {
+  justify-content: space-between;
+}
+
+footer .line-footer p i {
+  color: rgb(255, 115, 0);
+  font-size: 20px;
+}
+
+footer .line-footer p a {
+  color: rgb(255, 255, 255);
+}
+
+footer .line-footer p {
+  color: rgb(255, 255, 255);
+}
+
+footer .line-footer {
+  padding: 8px 0;
+}
+
+.borda {
+  border-top: 2px solid rgb(255, 115, 0);
+}
+
+.btn-social button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgb(255, 115, 0);
+  font-size: 20px;
+  cursor: pointer;
+  margin: 0 10px;
+  transition: 0.2s;
+}
+
+button:hover {
+  box-shadow: 0px 0px 8px rgb(255, 115, 0);
+  transform: scale(1.05);
+}
+/* Avaliações */
+#Avaliações {
+  padding: 10rem 0;
+  background: rgb(0, 0, 0);
+}
+
+.Avaliações-title {
+  text-align: center;
+  padding: 10px;
+  font-size: 5rem;
+  color: rgb(255, 115, 0);
+  text-transform: uppercase;
+}
+
+.testimonial-container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  padding: 10rem;
+}
+
+.testimonial-box .checked {
+  color: rgb(255, 115, 0);
+}
+
+.testimonial-box .testimonial-text {
+  margin: 1rem 0;
+  color: #ffffff;
+}
+
+.testimonial-box {
+  text-align: center;
+  padding: 1rem;
+}
+
+.Cliente-Foto img {
+  display: block;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.Cliente-Nome {
+  color: white;
+}
+
+.stars img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Formulario */
+
+/* Estilo para a seção de avaliações */
+.avaliacoes {
+  padding: 50px 20px;
+  background: #f5f5f5;
+}
+
+.avaliacoes h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2em;
+  color: #333;
+}
+
+.avaliacoes form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.avaliacoes form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+.avaliacoes form input[type="text"],
+.avaliacoes form textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: border-color 0.3s;
+}
+
+.avaliacoes form input[type="text"]:focus,
+.avaliacoes form textarea:focus {
+  border-color: #ff6f61;
+  outline: none;
+}
+
+.avaliacoes form input[type="submit"] {
+  background: #ff6f61;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background 0.3s;
+}
+
+.avaliacoes form input[type="submit"]:hover {
+  background: #e65c50;
+}
+
+/* mouse */
+
+.sparkle {
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  background-color: #ce6e2e; /* Cor rosa para os brilhos */
+  border-radius: 50%;
+  pointer-events: none; /* para Garantir que os brilhos não interfiram com os cliques */
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+  z-index: 9999; /* Colocar os brilhos sobre todos os outros elementos */
+}
+
+
+.slider{
+    margin: 0 auto;
+    width: 800px;
+    height: 450px;
+    overflow: hidden;
+    
+    
+}
+
+.slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+    margin-top: 70px;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 25%;
+    position: relative;
+    transition: 0.5s;
+}
+
+.slide img{
+    width: 800px;
+    justify-content: center;
+}
+
+.manual-navigation{
+    position: absolute;
+    width: 880px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: #fff;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0%;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+} 
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+
+
+.navigation-auto{
+    position: absolute;
+    width: 800px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 30px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: #fff;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn1{
+    background-color: #fff;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn1{
+    background-color: #fff;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn1{
+    background-color: #fff;
+}
+
+.lol{
+  background-color: #1f1e1f;
+
+}
+
+.one,
+.two,
+.three {
+  width: 80%;
+  height: 2px;
+  background-color: white;
+  margin: 6px auto;
+  transition-duration: 0.5s;
+}
+
+.menu-toggle {
+  width: 30px;
+  height: 30px;
+}
+
+.content.on {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(30, 31, 30, 0.8);
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content.on .logo {
+  display: none;
+}
+
+.content.on .menu-toggle{
+  position: absolute;
+  right: 40px;
+  top: 20px;
+}
+
+.content.on .list-menu{
+  display: block;
+}
+
+.content.on .list-menu li {
+  display: flex;
+  justify-content: center;
+}
+.content.on .list-menu li a {
+  font-size: 2rem;
+}
+
+.content.on .menu-toggle .two {
+  opacity: 0;
+}
+
+.content.on .menu-toggle .one {
+  transform: rotate(45deg) translate(5px, -8px);
+}
+
+.content.on .menu-toggle .three {
+  transform: rotate(-45deg) translate(20px, -6px);
+}
+
